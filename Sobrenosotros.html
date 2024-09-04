@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario del idioma guaraní</title>
+    <style>
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        .nav-bar {
+            background-color: rgb(95, 66, 66);
+            color: black;
+            padding: 10px;
+            text-align: center;
+        }
+        .white {
+            color: #ddd;
+        }
+        .nav-item {
+            display: inline-block;
+            margin: 0 10px;
+            position: relative;
+        }
+        .nav-item:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(fondo.png);
+        }
+        #autocomplete-list {
+            border: 1px solid #ddd;
+            border-top: none;
+            max-height: 150px;
+            overflow-y: auto;
+            position: absolute;
+            background-color: white;
+            z-index: 1000;
+            width: 300px; /* Match the input width */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .autocomplete-item {
+            text-decoration-color: black;
+            padding: 10px;
+        }
+        .autocomplete-item:hover {
+            background-color: #ddd;
+        }
+        #definition {
+            margin-top: 20px;
+        }
+        .content-table {
+            background-color: rgba(255, 255, 255, 0.5); /* Fondo semitransparente */
+            padding: 20px;
+            font-size: 15px;
+            border-radius: 10px;
+            width: 80%;
+            margin: 20px auto; /* Centrar la tabla en la página */
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        /* Hacer que las imágenes dentro de .content-table sean responsivas */
+        .content-table img {
+            max-width: 100%;
+            height: auto;
+            display: block;
+            margin: 0 auto; /* Centrar la imagen dentro de la tabla */
+        }
+        @media screen and (max-width: 768px) {
+            .content-table img {
+                max-width: 100%;
+                height: auto;
+                display: block;
+                margin: 0 auto;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-item">
+                <a class="white" href="#">Inicio</a>
+                <div class="dropdown-content">
+                    <a class="white" href="mision%20vision.html">Misión/Visión</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a class="white" href="#">Leyes</a>
+                <div class="dropdown-content">
+                    <a class="white" href="Leylenguas.html">Ley de lenguas</a>
+                    <a class="white" href="Leiguasu.html">Lei Guasu(constitución)</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a class="white" href="#">Diccionarios</a>
+                <div class="dropdown-content">
+                    <a class="white" href="index.html">Guaraní/Español</a>
+                    <a class="white" href="diccionariodos.html">Español/Guaraní</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a class="white" href="Sobrenosotros.html">Quiénes somos?</a>
+                <div class="dropdown-content"></div>
+            </div>
+        </div>
+    </header>
+    <div class="content-table">
+        <p><img src="notroso.jpg" width="700px" height="350px" alt=""></p>
+        <h1>¿Quiénes somos?</h1>
+        <p>Somos un grupo de estudiantes del Colegio Técnico Nacional y Centro de Entrenamiento Vocacional Arq. Raúl María Benítez Perdomo que se ha unido con el objetivo de preservar y promover el idioma guaraní. Hemos creado este diccionario web digital para facilitar el aprendizaje de esta lengua a las generaciones futuras.</p>
+        <h2>Integrantes</h2>
+        <h3>Juan José González Romero</h3>
+        <p><img src="juanjo.jpg" width="300px" height="300px"></p>
+        <p>Nació el 5 de junio de 2008 en Encarnación, Paraguay. Hijo de Augusto Ramón González Amarilla y Edy Carolina Romero, quienes han sido un pilar fundamental en su vida y educación. Comenzó su educación en la Escuela Básica N° 2698 Carlos Antonio López, en General Artigas, donde cursó desde el primer hasta el sexto grado. Luego, continuó su formación en el Colegio Nacional República Oriental del Uruguay en la misma ciudad, completando allí el séptimo al noveno grado de la educación escolar básica. </p>
+        <p>Actualmente, cursa el segundo curso de bachillerato técnico en Informática en el Colegio Técnico Nacional "Arq. Raúl María Benítez Perdomo". Desde muy joven, se ha destacado por su responsabilidad, disciplina y excelencia académica.</p>
+        <h3>César David López Leiva</h3>
+        <p><img src="sexar.jpg" width="300px" height="300px"></p>
+        <p>Estudiante aplicado, amante del desarrollo de software, la programación en general, la ciberseguridad y los deportes, específicamente los deportes de contacto y las artes marciales mixtas</p>
+        <p>Oriundo de Encarnación, Paraguay, nacido el 2 de abril de 2008, hijo de Celso Nicolás López Viveros y Fátima Gricelda Leiva Fernández, Hermano de Nicolás Miguel López Leiva, quienes fueron parte fundamental en su vida tanto social como educativa. César realizó la mayor parte de su vida educativa (desde primer grado hasta noveno) en el colegio Gral. Higinio Morínigo, donde fue abanderado y tuvo participación en varias actividades, también ahí descubrió su pasión por los deportes de contacto, practicando taekwondo por un año completo, posteriormente se mudó al Colegio Técnico Nacional y Centro de Entrenamiento Vocacional "Arq. Raúl María Benítez Perdomo" en donde siguió sus estudios y su pasión por la informática.</p>
+        <h3>Juan Eduardo Pintos Chávez</h3>
+        <p><img src="guapintos.jpg" width="300px" height="300px"></p>
+        <p>Nacido el 5 de diciembre de 2007 en Encarnación, Itapúa. Es hijo de Nelson Pintos y Lorena Chávez, comenzó su formación en la Escuela 699 Vicepresidente Sánchez, en la Ciudad General Artigas, donde cursó hasta el quinto grado. Posteriormente, se trasladó a la Escuela 2698 Carlos Antonio López, donde completé el segundo ciclo de la educación básica. Su siguiente etapa le llevó al Colegio República Oriental del Uruguay, donde finalizó el tercer ciclo.</p>
+        <p>Actualmente, está cursando el segundo curso en la especialidad de informática en el Colegio Técnico Nacional y Centro de Entrenamiento Vocacional “Arq. Raúl María Benítez Perdomo” </p>
+        <p>A lo largo de su trayectoria educativa, ha sido reconocido como uno de los mejores alumnos en cada etapa, desde el primer grado hasta el segundo curso de bachillerato en informática</p>
+        <h1>Contacto</h1>
+        <p>aranduneecontacto420@gmail.com</p>
+        <h3>Contenidos Extraídos</h3>
+        <p>Diccionario avañe'ẽ del Profesor Lino Trinidad Sanabria</p>
+    </div>
+</body>
+</html>

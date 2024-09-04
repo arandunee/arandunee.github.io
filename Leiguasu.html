@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Diccionario del idioma guaraní</title>
+    <style>
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        .white{
+            color:#ddd;
+        }
+        .nav-bar {
+            background-color: rgb(95, 66, 66);
+            color: black;
+            padding: 10px;
+            text-align: center;
+        }
+        .nav-item {
+            display: inline-block;
+            margin: 0 10px;
+            position: relative;
+        }
+        .nav-item:hover .dropdown-content {
+            display: block;
+        }
+        .dropdown-content {
+            display: none;
+            position: absolute;
+            background-color: #f9f9f9;
+            min-width: 160px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+            z-index: 1;
+        }
+        .dropdown-content a {
+            color: black;
+            padding: 12px 16px;
+            text-decoration: none;
+            display: block;
+        }
+        .dropdown-content a:hover {
+            background-color: #f1f1f1;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url(fondo.png);
+        }
+        #autocomplete-list {
+            border: 1px solid #ddd;
+            border-top: none;
+            max-height: 150px;
+            overflow-y: auto;
+            position: absolute;
+            background-color: white;
+            z-index: 1000;
+            width: 300px; /* Match the input width */
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        .autocomplete-item {
+            text-decoration-color: black;
+            padding: 10px;
+        }
+        .autocomplete-item:hover {
+            background-color: #ddd;
+        }
+        #definition {
+            margin-top: 20px;
+        }
+        .content-table {
+            background-color: rgba(255, 255, 255, 0.5); /* Aumenta la transparencia */
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 15px;
+            width: 80%;
+            margin: 20px auto; /* Centro en la página */
+            text-align: center;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="nav-bar">
+            <div class="nav-item">
+                <a class="white" href="#">Inicio</a>
+                <div class="dropdown-content">
+                    <a class="white" href="mision%20vision.html">Misión/Visión</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a class="white" class="white" href="#">Leyes</a>
+                <div class="dropdown-content">
+                    <a class="white" href="Leylenguas.html">Ley de lenguas</a>
+                    <a class="white" href="Leiguasu.html">Lei Guasu(constitución)</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a class="white" href="#">Diccionarios</a>
+                <div class="dropdown-content">
+                    <a class="white" href="index.html">Guaraní/Español</a>
+                    <a class="white" href="diccionariodos.html">Español/Guaraní</a>
+                </div>
+            </div>
+            <div class="nav-item">
+                <a class="white" href="Sobrenosotros.html">Quiénes somos?</a>
+                <div class="dropdown-content"></div>
+            </div>
+    </header>
+    <div class="content-table">
+        <h1>Léi Guasu(Constitución)</h1>
+        <p>Tetã Paraguái, héra teépe oñembyatýva rupive Tetã 
+            Atyguasupavẽ Moĩmbahárape, imandu'ávo Tupãre, 
+            ohechakuaávo teko marangatu, omoañetepotávo 
+            tekosã'ỹ, joja ha tekokatu omoañetévo tekuái 
+            tetãygua remoĩmbýva, tembijokuái rupiguáva, 
+            omongu'éva tetãygua voi ha ijahápe maymáva, 
+            omomba'e jeyjeývo ipu'akapavẽ ha ijeiko ha'e ae, 
+            ojehe'ávo mayma tetãre, omoañete ha omboaje 
+            ko Leiguasu.</p>
+        <p>Artículo 1</p>
+        <p>Paraguái República opaite árama oikóta ha'e ae ha poguype'ỹ. Ha'e Estado ojeikohápe leietére ha oñeñangarekohápe tetãyguáre, ipeteĩ ha oñemboja'okua'ỹva 
+            ha oguerekopa'ỹva peteĩ hendápe ipokatu sãmbyhyrã, 
+            Leiguasu ha leikuéra he'iháicha. Paraguái retã oipuru iñemboguatápe tekuái tetãygua remimoĩmbpýva, jokuaihára 
+            rupiveguáva, ijahápe tetãygua maymáva, opaichaguáva, 
+            ha ipyendáva teko marangatu jehechakuaápe</p>
+    </div>
+    </body>
+    </html>
